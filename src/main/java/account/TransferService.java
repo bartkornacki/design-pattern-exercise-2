@@ -4,7 +4,7 @@ import account.Logger;
 import com.sun.deploy.util.StringUtils;
 
 public class TransferService {
-    Logger logger = new Logger();
+    Logger logger = Logger.getInstance();
     public void transfer(final String accountNumberSource,final String accountNumberDestination, double ammount) {
         if(ammount>0 && AccountNumberValidator.validate(accountNumberSource)
                 && AccountNumberValidator.validate(accountNumberDestination)) {

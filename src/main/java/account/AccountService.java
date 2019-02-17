@@ -1,7 +1,7 @@
 package account;
 
 public class AccountService {
-    Logger logger = new Logger();
+    Logger logger = Logger.getInstance();
 
     public void withdraw(String accountNumber, double amount) {
         if(amount>0 && AccountNumberValidator.validate(accountNumber)) {

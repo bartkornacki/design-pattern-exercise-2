@@ -3,7 +3,8 @@ package account;
 public class Logger {
     private static Logger instance;
 
-    public Logger(){
+    private Logger(){
+
     }
 
     public static Logger getInstance() {
